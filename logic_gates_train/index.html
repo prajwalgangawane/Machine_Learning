@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Logic Gate Perceptron</title>
+    <script src="gates.js"></script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Logic Gate Perceptron</h1>
+    <div style="display: flex; justify-content: space-evenly;">
+        <div>
+            Learning Rate
+            <select id="learningRate">
+                <option>0.01</option>
+                <option selected>0.1</option>
+                <option>1</option>
+                <option>10</option>
+                <option>100</option>
+            </select>
+        </div>
+
+        <div>
+            Bias
+            <select id="bias">
+                <option selected>0</option>
+                <option>1</option>
+                <option>10</option>
+                <option>100</option>
+                <option>1000</option>
+            </select>
+        </div>
+        <div>
+            Threshold
+            <select id="threshold">
+                <option>0</option>
+                <option>0.1</option>
+                <option selected>0.01</option>
+                <option>0.001</option>
+            </select>
+        </div>
+        <div>
+            Max Iteration
+            <select id="maxIteration">
+                <option selected>10</option>
+                <option>50</option>
+                <option>100</option>
+                <option>500</option>
+                <option >1000</option>
+                <option>5000</option>
+                <option>10000</option>
+                <option>50000</option>
+                <option>100000</option>
+            </select>
+        </div>
+    </div>
+    <div style="display:flex;">
+        <div style="display: flex; flex-direction: column; align-items: center; padding: 10px;">
+            <div id="AND_div_title" style="margin-top: 20px;">AND</div>
+            <canvas id="AND" width="200" height="200"></canvas>
+            <div id="AND_div">AND</div>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; padding: 10px;">
+            <div id="OR_div_title" style="margin-top: 20px;">OR</div>
+            <canvas id="OR" width="200" height="200"></canvas>
+            <div id="OR_div">OR</div>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; padding: 10px;">
+            <div id="NAND_div_title" style="margin-top: 20px;">NAND</div>
+            <canvas id="NAND" width="200" height="200"></canvas>
+            <div id="NAND_div">NAND</div>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; padding: 10px;">
+            <div id="NOR_div_title" style="margin-top: 20px;">NOR</div>
+            <canvas id="NOR" width="200" height="200"></canvas>
+            <div id="NOR_div">NOR</div>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; padding: 10px;">
+            <div id="XOR_div_title" style="margin-top: 20px;">XOR</div>
+            <canvas id="XOR" width="200" height="200"></canvas>
+            <div id="XOR_div">XOR</div>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; padding: 10px;">
+            <div id="XNOR_div_title" style="margin-top: 20px;">XNOR</div>
+            <canvas id="XNOR" width="200" height="200"></canvas>
+            <div id="XNOR_div">XNOR</div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
