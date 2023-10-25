@@ -16,7 +16,7 @@ class Model {
         this.threshold = options && options.threshold ? options.threshold : 0.01
         this.data = options && options.data ? options.data : data
         this.gate = options && options.gate ? options.gate : key
-        this.maxIteration = options && options.maxIteration ? options.maxIteration : 10
+        this.maxIteration = options && options.maxIteration ? options.maxIteration : 100
     }
     train() {
         let error = 0;
